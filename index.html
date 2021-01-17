@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jamb Sample Form</title>
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    body{
+        background-size:100%;
+        background-attachment: fixed;  
+        animation: global 25s infinite;
+        height: 100%;
+        
+        /* animation-name: global;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;  */
+     }
+   @keyframes global{
+        0%{background: url("img/4.jpg");width: 100%;}
+       /* 50%{background: url("img/3.jpg");width: 100%;} */
+       100%{background: url("img/3.jpg");width: 100%;}
+   }
+   .wrapper{
+       position: relative;
+   }
+   .Header{
+       text-align: center;
+   }
+   .container{
+        margin: 0px 0px 0px 260px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: transparent;
+        width: 50%;
+        padding: 22px;
+        box-shadow: 1px 2px 2px 2px gray;
+   }
+    h1{
+        margin: 0px 0px -10px 0px; 
+   }
+   .p1 strong{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   .p1 span{
+       margin: 0px 0px 0px 4px;
+       color: rgb(94, 93, 93);
+       font-family: serif;
+   }
+   .p1 p{
+       margin: 15px 0px -5px 0px;
+       color: rgb(94, 93, 93);
+       font-size: 14px;
+   }
+   input[type="submit"]{
+        background-color: rgb(82, 82, 204);
+        color: white;
+        height: 35px;
+        width: 90px;
+        border: none;
+        margin: 0px 0px 0px 8px;
+   }
+   .p2 h2{
+       color: red;
+       margin-bottom: -8px;
+   }
+   .p2 p{
+       font-weight: bold;
+       color: rgb(88, 88, 88);
+   }
+   .p2 strong{
+       color: red;
+       font-weight: bold;
+       font-size: 16px;
+       margin: 0px 0px 0px 10px;
+   }
+   .p3{
+       margin: 10px 0px 0px 0px;
+   }
+   input[type="text"]{
+       width: 380px;
+       padding: 5px;
+       margin: 25px 0px 0px 0px;
+       height: 20px;
+       font-size: 15px;
+       border: none;
+    }
+   select{
+       width: 393px;
+       padding: 5px;
+       margin: 25px 0px -20px 0px;
+   }
+   button{
+       background-color: rgb(82, 82, 204);
+       color: white;
+       height: 40px;
+       width: 90px;
+       border: none;
+       font-size: 20px;
+   }
+   input[type="button"]{
+       width: 130px;
+       padding: 6px;
+       height: 45px;
+       font-size: 20px;
+       margin: 40px 0px 0px 170px;
+       background: rgb(116, 160, 116);
+       color: white;
+   }
+   footer{
+        color: darkolivegreen;
+        margin: 40px 0px 0px 0px;
+        text-align: center;
+   }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+           
+    <header class="Header">
+        <img src="img/logo_big.png" alt="" width="230px" height="200px">  
+    </header>
+    <section class="container">
+        <div class="p1">
+            <h1><strong>Sign Up</strong><span> (e-mail Verification)</span></h1>
+            <p>Enter your Email and details below:</p> 
+            <p>Already Have A Confirmaton Code ?<input type="submit" value="Click Here"></p> 
+        </div>    
+        <div class="p2">
+            <h2>Important Notice!</h2>
+            <p> You are advised to create an account with a valid email address because of all vital <br> information will be sent to the email you supplied <strong>Yahoo mails are not encouraged <br> due to delay in delivery</strong> </p>
+        </div>
+        <div class="p3">
+            <form action="" method="post">
+                <input type="text" name="email" class="fa fa-envelope" value="" placeholder="&#xf0e0  e-Mail Address"> <br>
+                <input type="text" name="phone number" placeholder="&#xf0e0 Confirm e-Mail Address" class="fa fa-envelope"> <br>
+                <input type="text" name="Mobile No" placeholder="&#xf3cd Mobile No" class="fa fa-mobile-alt"> <br>
+                <input type="text" name="Mobile No" placeholder="&#xf3cd Confirm Phone No" class="fa fa-mobile-alt"> <br>
+                <select name="" id="">
+                    <option value="selected">Select</option>
+                    <option value="">Your birthday date</option>
+                    <option value="">Your Mother's maiden name</option>
+                    <option value="">Your best subject</option>
+                    <option value="">Your father's middle name</option>
+                </select> <br>
+                <input type="text" name="secret question" placeholder="&#xf023 Secret Question Answer" class="fa fa-lock"> <br>
+                <input type="text" name="secret question" placeholder="&#xf023 Confirm Secret Question Answer" class="fa fa-lock"> <br>
+                <button type="submit" class="fa fa-arrow-circle-left"> Back</button>
+                <input type="button" name="Verify e-mail" value="Verify e-mail">
+            </form>
+        </div>    
+    </section>
+    <footer>2019 &copy; Joint Admission and Matriculation Board (JAMB)</footer>
+</div>
+</body>
+</html>
